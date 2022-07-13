@@ -60,6 +60,13 @@ img {
   padding-left: 15px;
 }
 
+.main-benefits,
+.main-illustration,
+.main-team,
+.main-projects {
+  padding: 94px 0;
+}
+
 /* Btn styles */
 
 .btn {
@@ -103,7 +110,6 @@ img {
 /* Header section */
 
 .header {
-  /* background-color: var(--third-txt-color); */
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -183,6 +189,9 @@ img {
 }
 
 .main-banner-title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -209,8 +218,6 @@ img {
 
 .main-benefits-list {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
   gap: 30px;
 }
 
@@ -237,9 +244,9 @@ img {
 
 .main-illustration-list,
 .main-team-list {
+  /* flex-basis: calc((100% - 30px * 2) / 3); */
   display: flex;
   gap: 30px;
-  padding-bottom: 94px;
 }
 
 .main-team {
@@ -247,10 +254,8 @@ img {
 }
 
 .main-team-item {
-  border-right: 1px solid var(--lighter-bg-color);
-  border-bottom: 1px solid var(--lighter-bg-color);
-  border-left: 1px solid var(--lighter-bg-color);
   background-color: var(--third-txt-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -264,7 +269,6 @@ img {
 .main-illustration-title,
 .main-team-members {
   margin-bottom: 50px;
-  padding-top: 94px;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -300,7 +304,6 @@ img {
 }
 
 .main-projects-type {
-  margin-top: 4px;
   font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -319,7 +322,6 @@ img {
 }
 
 .main-filter-list {
-  padding-top: 94px;
   margin-bottom: 34px;
   display: flex;
   gap: 8px;
@@ -327,7 +329,6 @@ img {
 }
 
 .main-projects-list {
-  padding-bottom: 94px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -341,6 +342,10 @@ img {
   background-color: var(--dark-bg-color);
 }
 
+.footer-logo-united {
+  margin-bottom: 20px;
+}
+
 .footer-logo {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -348,10 +353,6 @@ img {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--accent-color)
-}
-
-.footer-logo-united {
-  margin-bottom: 20px;
 }
 
 .footer-logo-accent {
@@ -367,16 +368,18 @@ img {
   color: var(--third-txt-color)
 }
 
-.footer-item {
-  margin-bottom: 9px;
+.footer-contacts {
+  font-style: normal;
 }
 
-.footer-mail,
-.footer-phone {
-  font-style: normal;
+.footer-item {
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-mail {
+  margin-bottom: 9px;
 }
